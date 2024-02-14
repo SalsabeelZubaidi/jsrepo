@@ -1,0 +1,19 @@
+function decimalToBinary(x) {
+    let binary = 0;
+    let remainder = 1;
+    let i=1;
+
+    while (x !== 0) {
+        remainder = x % 2; 
+        step =x/2;
+        Remainder=remainder;
+        Quotient= parseInt(x / 2);
+        x = parseInt(x / 2);
+        binary = binary + remainder * i; 
+        i = i * 10; 
+    }
+
+    console.log("Your decimal number in binary= " + binary );
+}
+
+decimalToBinary(30);
